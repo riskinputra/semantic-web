@@ -11,6 +11,8 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     
     <!-- Custom CSS -->
     <link href="assets/css/custom.css" rel="stylesheet">
@@ -25,15 +27,15 @@
             
           <div class="uk-navbar-left uk-hidden-small">
             <a class="uk-navbar-item uk-logo" href="index.html">
-              <img src="assets/image/logo.png" alt="logo" class="logo-brand">Studio</a>
+              <img src="assets/image/logo.png" alt="image of logo" class="logo-brand">Studio</a>
           </div>
     
           <div class="uk-navbar-right uk-hidden-small">
             <ul class="uk-navbar-nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#service">Service</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#about" uk-scroll>About</a></li>
+              <li><a href="#portfolio" uk-scroll>Portfolio</a></li>
+              <li><a href="#contact" uk-scroll>Contact Us</a></li>
             </ul>
             
             <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
@@ -53,7 +55,7 @@
           <!-- Mobile Display -->
           <div class="uk-navbar-left uk-visible-small">
             <a href="index.html" class="uk-navbar-item uk-logo">
-              <img src="assets/image/logo.png" alt="logo" class="logo-brand">Studio
+              <img src="assets/image/logo.png" alt="image of logo mobile" class="logo-brand">Studio
             </a>
           </div>
   
@@ -70,14 +72,14 @@
 
               <ul class="uk-nav uk-nav-default">
                 <li class="uk-text-center"><a href="index.html" class="uk-navbar-item uk-logo">
-                    <img src="assets/image/logo.png" alt="logo" class="logo-brand">Studio
+                    <img src="assets/image/logo.png" alt="image of logo canvas" class="logo-brand">Studio
                   </a>
                 </li>
                 <li class="uk-nav-divider"></li>
                 <li><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
-                <li><a href="#about"><span class="uk-margin-small-right" uk-icon="icon: user"></span> About</a></li>
-                <li><a href="#service"><span class="uk-margin-small-right" uk-icon="icon: cog"></span> Service</a></li>
-                <li><a href="#contact"><span class="uk-margin-small-right" uk-icon="icon: phone"></span> Contact Us</a></li>
+                <li><a href="#about" uk-scroll><span class="uk-margin-small-right" uk-icon="icon: user"></span> About</a></li>
+                <li><a href="#portfolio" uk-scroll><span class="uk-margin-small-right" uk-icon="icon: cog"></span> Portfolio</a></li>
+                <li><a href="#contact" uk-scroll><span class="uk-margin-small-right" uk-icon="icon: phone"></span> Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -92,7 +94,7 @@
           <ul class="uk-slideshow-items">
               <li>
                   <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                      <img src="http://www.victorbezrukov.com/wp-content/gallery/cinema/coffee-table.jpg" alt="slide-1" uk-cover>
+                      <img src="http://www.victorbezrukov.com/wp-content/gallery/cinema/coffee-table.jpg" alt="image of slide-1" uk-cover>
                       
                   </div>
                   <div class="uk-position-center uk-position-small uk-text-center uk-light">
@@ -103,7 +105,7 @@
               </li>
               <li>
                   <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
-                      <img src="http://jvdc.me/assets/jvdcme-beautiful-photography-abstract-street-lights.jpg" alt="slide-2" uk-cover>
+                      <img src="http://jvdc.me/assets/jvdcme-beautiful-photography-abstract-street-lights.jpg" alt="image of slide-2" uk-cover>
                   </div>
                   <div class="uk-overlay uk-overlay-primary uk-position-bottom-left uk-position-small">
                       <h3 class="uk-margin-remove">Lorem ipsum dolor</h3>
@@ -112,7 +114,7 @@
               </li>
               <li>
                   <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
-                      <img src="https://i0.wp.com/www.bocphotography.com/wp-content/uploads/2016/01/dawn-landscape-photography.jpg?resize=1200%2C800" alt="slide-3" uk-cover>
+                      <img src="https://i0.wp.com/www.bocphotography.com/wp-content/uploads/2016/01/dawn-landscape-photography.jpg?resize=1200%2C800" alt="image of slide-3" uk-cover>
                   </div>
                   <div class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-position-small">
                       <h3 class="uk-margin-remove">Lorem ipsum dolor</h3>
@@ -135,16 +137,39 @@
       <article>
         <div id="about">
           <div class="uk-section uk-section-default">
-            <h1>About Us</h1>
+            <h1 class="uk-heading-line uk-text-center"><span>About Us</span></h1>
+
+            <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+              <div>
+                <div class="" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, consequatur! Dolores minus recusandae earum sequi fuga totam iure natus necessitatibus maiores enim, aliquam porro quam facilis saepe vitae expedita illo?</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </article>
-  
-      <a href="#" class="uk-icon-button uk-position-small  uk-position-bottom-right" uk-totop uk-scroll></a>
+      
+      <div id="scroll-up">
+        <a href="#" class="to-top" uk-icon="icon: triangle-up" uk-scroll></a>
+      </div>
     </div>
+
+    <footer class="footer">
+      <div class="uk-container">
+
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="assets/js/uikit/uikit.min.js"></script>
     <script src="assets/js/uikit/uikit-icons.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>

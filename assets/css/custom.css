@@ -23,10 +23,33 @@ body{
   z-index: 980;
 }
 
-#cover{
-  height: 10% !important;
+.to-top{
+  display: block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #1b10af; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 60px; /* Rounded corners */
+  font-size: 24px;
 }
 
+
+/* footer */
+footer{
+	text-align: center;
+	color: #fff;
+	padding: 40px;
+	background-color: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 /* Visibility */
 /* Desktop and bigger */
 @media (min-width: 960px) {
@@ -65,5 +88,9 @@ body{
  }
  .uk-logo img{
     height: 70%;
+  }
+
+  #about h1{
+    font-size: 140%;
   }
 }

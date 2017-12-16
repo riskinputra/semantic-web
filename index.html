@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>R&P Studio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- UIKIT CSS -->
     <link rel="stylesheet" href="assets/css/uikit/uikit.min.css" />
+    
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link href="assets/css/custom.css" rel="stylesheet">
   </head>
   <body>
 
+    <header>
+      <div class="uk-container">
+        <nav class="uk-navbar-container" uk-navbar>
+            
+          <div class="uk-navbar-left uk-hidden-small">
+            <a class="uk-navbar-item uk-logo" href="index.html">
+              <img src="assets/image/logo.png" alt="logo" class="logo-brand">Studio</a>
+          </div>
     
+          <div class="uk-navbar-right uk-hidden-small">
+            <ul class="uk-navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          <!-- Mobile Display -->
+          <div class="uk-navbar-left uk-visible-small">
+            <a href="index.html" class="uk-navbar-item uk-logo">
+              <img src="assets/image/logo.png" alt="logo" class="logo-brand">Studio
+            </a>
+          </div>
+  
+          <div class="uk-navbar-right uk-visible-small">
+              <a class="uk-navbar-toggle" uk-toggle uk-navbar-toggle-icon href="#offcanvas-id"></a>
+          </div>
+        </nav>
+
+        <!-- Offcanvas Bar -->
+        <div class="uk-offcanvas-content">
+          <div id="offcanvas-id" uk-offcanvas>
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+              <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+              <ul class="uk-nav uk-nav-default">
+                <li class="uk-text-center"><a href="index.html" class="uk-navbar-item uk-logo">
+                    <img src="assets/image/logo.png" alt="logo" class="logo-brand">Studio
+                  </a>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: user"></span> About</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: cog"></span> Service</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: phone"></span> Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </header>
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

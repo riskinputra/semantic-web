@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/uikit/uikit.min.css" />
     
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     
     <!-- Custom CSS -->
@@ -18,7 +18,9 @@
   <body>
 
     <header>
-      <div class="uk-container">
+      <!-- Start  Navigation --> 
+      
+      <div id="navbar-fixed">
         <nav class="uk-navbar-container" uk-navbar>
             
           <div class="uk-navbar-left uk-hidden-small">
@@ -33,6 +35,19 @@
               <li><a href="#">Service</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
+            
+            <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+          </div>
+          <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+              
+            <div class="uk-navbar-item uk-width-expand">
+              <form class="uk-search uk-search-navbar uk-width-1-1">
+                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+              </form>
+            </div>
+    
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+    
           </div>
     
           <!-- Mobile Display -->
@@ -68,7 +83,50 @@
           </div>
         </div>
       </div>
+      <!-- End Navigation -->
      
+      <!-- Start Slideshow -->
+      <div id="cover">
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+              
+          <ul class="uk-slideshow-items">
+              <li>
+                  <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                      <img src="http://www.victorbezrukov.com/wp-content/gallery/cinema/coffee-table.jpg" alt="slide-1" uk-cover>
+                      
+                  </div>
+                  <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                      <h2 class="uk-margin-remove">Welcome</h2>
+                      <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  
+              </li>
+              <li>
+                  <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                      <img src="http://jvdc.me/assets/jvdcme-beautiful-photography-abstract-street-lights.jpg" alt="slide-2" uk-cover>
+                  </div>
+                  <div class="uk-overlay uk-overlay-primary uk-position-bottom-left uk-position-small">
+                      <h3 class="uk-margin-remove">Lorem ipsum dolor</h3>
+                      <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+                  </div>
+              </li>
+              <li>
+                  <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                      <img src="https://i0.wp.com/www.bocphotography.com/wp-content/uploads/2016/01/dawn-landscape-photography.jpg?resize=1200%2C800" alt="slide-3" uk-cover>
+                  </div>
+                  <div class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-position-small">
+                      <h3 class="uk-margin-remove">Lorem ipsum dolor</h3>
+                      <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+                  </div>
+              </li>
+          </ul>
+        
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
+        </div>
+      </div>
+      <!-- End Slideshow -->
     </header>
     
 

@@ -2,8 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.black{
+  color: black;
 }
 
 .uk-logo{
@@ -12,7 +17,15 @@ body{
   margin-right: 20px;
 }
 
+#navbar-fixed{
+  width: 100%;
+  position: fixed;
+  z-index: 980;
+}
 
+#cover{
+  height: 10% !important;
+}
 
 /* Visibility */
 /* Desktop and bigger */

@@ -31,19 +31,47 @@ body{
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #1b10af; /* Set a background color */
+  background-color: #1e87f0; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 60px; /* Rounded corners */
   font-size: 24px;
+  border: 1px solid transparent;
+}
+/* Hover + Focus */
+.to-top:hover,
+.to-top:focus {
+  background-color: #0f7ae5;
+  color: #fff;
+}
+/* OnClick + Active */
+.to-top:active,
+.to-top.uk-active {
+  background-color: #0e6dcd;
+  color: #fff;
 }
 
 
 #portfolio{
   background: rgb(22, 19, 19);
-  background-image: url('http://igwealth.com.au/wp-content/uploads/2016/09/4_investment_wealth.jpg');
-  padding: 10px;
+  background-image: url('http://ac8124de3ab17f939046-7415db6e340f30b5840642d257b0204a.r10.cf1.rackcdn.com/lps/assets/u/she-174403-Business-meeting.jpg');
+  background-repeat: no-repeat;
+  padding: 40px 10px 20px 10px;
+}
+#portfolio h1{
+  color:#fff;
+}
+
+
+#contact{
+  padding: 40px 10px 20px 10px;
+}
+
+#map{
+  width:100%;
+  height:280px;
+  background:yellow
 }
 
 /* footer */
@@ -81,6 +109,11 @@ footer{
  .uk-hidden-medium {
    display: none !important;
  }
+
+ #map{
+    width:100%;
+    height:280px;
+  }
 }
 /* Phone landscape and smaller*/
 @media (max-width: 767px) {
@@ -96,4 +129,5 @@ footer{
  .uk-logo img{
     height: 70%;
   }
+
 }
